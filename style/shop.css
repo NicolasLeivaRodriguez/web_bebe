@@ -1,0 +1,147 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Indie Flower", cursive;
+    background-image: url(../assets/tienda/bg_tienda.webp);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    animation: fadeInDown 1s ease-out;
+}
+
+header p {
+    font-size: 0.8em;
+    color: #555;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.shop-container {
+    background-color: #e0e0c562; /* Fondo ligeramente transparente */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 2000px;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño responsivo */
+    gap: 50px;
+}
+
+.product-item {
+    background-color: #a99059;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-item:hover {
+    background-color: #e9e9e9;
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.product-image {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden; /* Para que la imagen no se salga del borde */
+}
+
+.product-image img {
+    width: 100%;
+    display: block; /* Evita espacio extra debajo de la imagen */
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Ocupa el espacio restante */
+}
+
+.product-price {
+    font-size: 2em;
+    color: #25292d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.buy-link {
+    background-color: hsl(37, 43%, 67%);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    font-family: "Indie Flower", cursive;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    align-self: flex-start; /* Alinea el botón al inicio de su contenedor */
+}
+
+.buy-link:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
