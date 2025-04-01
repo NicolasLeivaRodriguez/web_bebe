@@ -14,7 +14,7 @@ body {
 }
 
 body:hover {
-    background-color: hsl(120, 30%, 80%);
+    background-color: #000000;
 }
 
 * {
