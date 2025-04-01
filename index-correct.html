@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>El amor encuentra su máxima expresión al formar una familia</h1>
+  </header>
+  <section class="bento" id="bento">
+    <div class="bento-grid">
+      <div class="item item-1">
+        <a href="#ecografia"><span class="texto" id="ecografia_text">ECOGRAFIA</span></a>
+      </div>
+      <div class="item item-2">
+        <a href="pages/shop.html" target="_blank"><span class="texto" id="tienda_text">TIENDA</span></a>
+      </div>
+      <div class="item item-3">
+        <a href="#historia"><span class="texto" id="historia_text">HISTORIA</span></a>
+      </div>
+      <div class="item item-4">
+        <a href="#semanas">SEMANA<br>
+        6</a>
+      </div>
+      <div class="item item-5">
+        <a href="#formulario">FORMULARIO</a>
+      </div>
+    </div>
+  </section>
+  <section id="contador">
+    <div class="contador-container">
+      <div class="contador-item">
+        <span id="dias">00</span> <span>Días</span>
+      </div>
+      <div class="contador-item">
+        <span id="horas">00</span> <span>Horas</span>
+      </div>
+      <div class="contador-item">
+        <span id="minutos">00</span> <span>Minutos</span>
+      </div>
+      <div class="contador-item">
+        <span id="segundos">00</span> <span>Segundos</span>
+      </div>
+    </div>
+    <script src="scrip/scrip.js"></script>
+  </section>
+  <section id="ecografia">
+    <div class="titulo_secciones">
+      <h2>ECOGRAFIA</h2>
+    </div>
+    <div class="ecografia">
+      <div><img src="assets/ecografia/eco1.jpg" alt="eco1" style="width: 1000px; height: auto;"></div>
+      <div class="desc_eco">
+        El miércoles 26 de marzo de 2025 fue un día muy especial… ¡mi primera ecografía! Mamá y papá estaban impacientes por verme, y la ginecóloga fue increíblemente amable conmigo. Desde mi pequeño mundo, pude escuchar sus risas llenas de emoción, y el corazón de mamá latía rapidísimo, como si ya me abrazara con cada latido.
+      </div>
+    </div>
+  </section>
+  <section id="semanas">
+    <div class="titulo_secciones">
+      <h2>PROGRESO</h2>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar" style="width: 20%;"></div><span class="progress-text">SEMANA 8</span>
+    </div>
+    <div class="ecografia" id="progreso_container">
+      <div class="progreso">
+        Semana 8: embrión crece rápido (13-18 mm), cabeza grande. Desarrollo del bebé: Dedos de manos y pies se forman. Brazos y muñecas se flexionan. Ojos con pigmento se desarrollan. Genitales, pulmones e intestinos comienzan a formarse. Piel translúcida y corazón de 4 cámaras latiendo a 180 ppm
+      </div>
+      <div><img src="assets/week_progres/semana8.jpeg" alt="semana8" id="foto_semana"></div>
+      <div class="progreso">
+        Semana 8 (madre): náuseas, calambres, dolor de espalda, cambios de humor, hinchazón, estreñimiento y fatiga. <b>Síntomas físicos:</b> calambres en vientre, espalda baja y piernas; dolor ciático; náuseas matutinas; senos sensibles; aversión a comidas y olores; diarrea; necesidad frecuente de orinar; manchado leve; fatiga; problemas para dormir.
+      </div>
+    </div>
+  </section>
+  <section id="historia">
+    <div class="titulo_secciones">
+      <h2>NUESTRA HISTORIA</h2>
+    </div>
+    <div class="ecografia" style="background-color: rgb(227, 220, 162);">
+      <div class="desc_eco">
+        Tras un tiempo separados, la vida nos ha vuelto a unir en una isla preciosa donde con paciencia y esfuerzo hemos creado una bonita FAMILIA. Ahora comenzamos un nuevo camino con un integrante más en la casa.
+      </div>
+      <div><img src="assets/story/foto_historia.jpg" alt="foto_historia" style="width: 800px; height: auto;"></div>
+    </div>
+  </section>
+  <section id="formulario">
+    <div class="titulo_secciones">
+      <h2>FORMULARIO</h2>
+    </div>
+    <div class="formulario-container">
+      <h1>Registro del Bebé</h1>
+      <form id="registroBebe" name="registroBebe">
+        <div class="form-group">
+          <label for="nombreBebe">Su Nombre</label> <input type="text" id="nombreBebe" name="nombreBebe" required="">
+        </div>
+        <div class="form-group">
+          <label for="nombreBebe">Nombre del Bebé:</label> <input type="text" id="nombreBebe" name="nombreBebe" required="">
+        </div>
+        <div class="form-group">
+          <label for="fechaParto">Fecha de Parto Estimada:</label> <input type="date" id="fechaParto" name="fechaParto" required="">
+        </div>
+        <div class="form-group genero-selector">
+          <label>Género:</label>
+          <div class="iconos-genero">
+            <input type="radio" id="nino" name="genero" value="niño" required=""> <label for="nino" class="icono nino-icono"><img src="assets/icon/baby%20(2).png" alt="baby%20(2)"></label> <input type="radio" id="nina" name="genero" value="niña" required=""> <label for="nina" class="icono nina-icono"><img src="assets/icon/baby.png" alt="baby"></label>
+          </div>
+        </div><button class="enviar" type="submit"><img src="assets/icon/enviar_btn.png" alt="enviar_btn" width="100px"></button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
